@@ -1,0 +1,106 @@
+body {
+  min-width: 1100px; /*es así o con flexbox?*/
+  max-width: 1600px;
+  height: 100vh;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+  background-image: url(background_header.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 39px;
+  width: 105px;
+}
+
+.nav-links {
+  margin:0;
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  justify-content: flex-end;
+  padding-top: 30px;
+  margin-right: 26px;
+  text-decoration: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+.header-title {
+  margin-left: 80px;
+  margin-top: 213px;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  max-width: 709px;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.span-accent {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  display: block;
+  font-style: italic;
+  color: #ff976b;
+  font-weight: normal;
+}
+
+.header-description {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 80px;
+  max-width: 683px;
+  padding: 0;
+}
+
+.header-info {
+  display: flex;
+  color: #6f6f6f;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  right: 80px;
+  justify-content: space-between;
+}
+
+.header-hours p{
+  margin:0;
+}
+
+.info-text{
+
+}
+
+.header-info div:nth-of-type(2){
+    padding-top:20px
+}
+
