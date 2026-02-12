@@ -51,6 +51,10 @@ body {
   color: black;
 }
 
+.nav-links a:hover {
+  color: #ff976b;
+}
+
 .header-image {
   position: absolute;
   top: 124px;
@@ -107,7 +111,7 @@ body {
   min-width: 1100px; /*es así o con flexbox?*/
   max-width: 1600px;
   margin: 0 auto;
-  height: 987px;
+  height: 994px;
   background-image: url("../images/background_reservation.svg");
   background-color: #ffd6c5;
   background-size: cover;
@@ -161,6 +165,8 @@ body {
   box-sizing: border-box;
   height: 60px;
   color: #838383;
+  border-radius: 4px;
+  padding: 0 20px;
 }
 
 .form__input-datetime {
@@ -171,6 +177,7 @@ body {
   margin-bottom: 32px;
   box-sizing: border-box;
   height: 60px;
+  padding: 0 20px;
 }
 
 .form__button {
@@ -186,6 +193,11 @@ body {
   line-height: 20px;
   border: none;
   margin-bottom: 32px;
+  opacity: 100%;
+}
+
+.form__button:hover {
+  opacity: 70%;
 }
 
 .form__checkbox {
@@ -196,12 +208,108 @@ body {
   border-radius: 4px;
 }
 
+.form__checkbox:checked::after {
+  appearance: none;
+  background-color: #e96e3a;
+  content: url("../images/check.svg");
+}
+
 .form__label-term {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   border: none;
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.footer {
+  min-width: 1100px;
+  max-width: 1600px;
+  height: 344px;
+  overflow-x: auto;
+  background-color: #d35722;
+  position: relative;
+  z-index: -2;
+  padding: 60px 80px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__circle {
+  width: 340px;
+  height: 340px;
+  background-color: #e96e3a;
+  position: absolute;
+  top: -128px;
+  left: -4px;
+  border-radius: 170px;
+  z-index: -1;
+}
+
+.footer__info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 39px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.footer__contacts-title {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.footer__contacts-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-self: flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.footer__contacts-list a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__copyright {
+  align-self: flex-start;
+}
+
+.footer__copyright-text {
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer__contacts-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.footer__contacts-list a:hover {
+  color: #ffd6c5;
 }

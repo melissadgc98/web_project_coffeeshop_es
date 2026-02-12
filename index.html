@@ -55,7 +55,7 @@
     <main class="content">
       <section class="form__container" id="reservation">
         <h2 class="form__title">Reservar una mesa</h2>
-        <form class="form">
+        <form class="form" action="/procesar-formulario" method="POST">
           <fieldset class="form__fieldset">
             <label for="name" class="form__label">Nombre *</label>
             <input
@@ -103,7 +103,7 @@
             />
           </fieldset>
           <button type="submit" class="form__button">Reservar una mesa</button>
-          <label class="form__label-term">
+          <label class="for<m__label-term">
             <input
               type="checkbox"
               id="terms"
@@ -118,6 +118,29 @@
         </form>
       </section>
     </main>
-    <footer class="footer" id="contacts"></footer>
+    <footer class="footer" id="contacts">
+      <div class="footer__circle"></div>
+      <div class="footer__info">
+        <img
+          class="footer__logo"
+          src="./images/logo_coffeeshop_light.svg"
+          alt="Logo de Triple Espresso"
+        />
+        <div class="footer__contacts">
+          <h3 class="footer__contacts-title">Redes sociales</h3>
+          <ul class="footer__contacts-list">
+            <li><a href="https://www.facebook.com">
+              <img src="./images/facebook_white.svg" alt="Facebook" class="footer__contacts-icon" />
+              Facebook</a></li>
+            <li><a href="https://www.instagram.com">
+              <img src="./images/instagram_white.svg" alt="Instagram" class="footer__contacts-icon" />
+              Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+      <p class="footer__copyright-text">© 2026 Melissa González</p>
+      </div>
+    </footer>
   </body>
 </html>
